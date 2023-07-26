@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello webhook now its working!'
+    return 'Testing webhook automatic build!'
