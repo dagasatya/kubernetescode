@@ -11,7 +11,7 @@ node {
     // run unit testing here from the image
     stage('Test image') {
         app.inside {
-            sh 'echo "Test passed'
+            sh 'echo "Test passed"'
         }
     }
     // push the image to docker hub
