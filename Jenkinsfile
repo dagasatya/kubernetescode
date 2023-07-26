@@ -23,6 +23,6 @@ node {
     // will run manifest update that will update the deployment yaml
     stage('Trigger ManifestUpdate') {
         echo "triggering updatemanifestjob"
-        build job: "updatemanifest" parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+        build job: "updatemanifest", parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
     }
 }
